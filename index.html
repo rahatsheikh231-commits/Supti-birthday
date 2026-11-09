@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Supti 💙</title>
+
+<style>
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #17152f;
+    color: white;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ec72b7, #8c7cff);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #d77acb66;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid #dba6ff;
+}
+
+/* WELCOME */
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+
+    background:
+        radial-gradient(circle at top left, #713c91, transparent 45%),
+        radial-gradient(circle at bottom right, #315e9e, transparent 45%),
+        linear-gradient(135deg, #17132f, #30204e);
+}
+
+.welcome-content {
+    max-width: 600px;
+}
+
+.small-text {
+    color: #e9b8ff;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    font-size: clamp(38px, 8vw, 65px);
+    color: #ffc5e9;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.intro {
+    color: #eee5f7;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* SECTIONS */
+
+.section {
+    min-height: 100vh;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at top right, #57356d, transparent 40%),
+        linear-gradient(135deg, #17132f, #25264e);
+}
+
+.section h2 {
+    color: #ffc5e9;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section > p {
+    color: #ded5ec;
+    line-height: 1.7;
+}
+
+/* CAKE */
+
+.cake {
+    font-size: 110px;
+    margin: 35px 0 10px;
+}
+
+.message {
+    color: #ffbde7;
+    margin-top: 20px;
+    min-height: 25px;
+}
+
+/* GIFTS */
+
+.gift-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 650px;
+    margin-top: 35px;
+}
+
+.gift-card {
+    background: #ffffff12;
+    border: 1px solid #d99be955;
+    border-radius: 15px;
+    padding: 25px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gift-card:hover {
+    background: #ffffff20;
+    transform: translateY(-5px);
+}
+
+.gift-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.gift-card h3 {
+    color: #ffc5e9;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.gift-card p {
+    color: #e5d7f2;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 850px;
+    margin-top: 35px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #d9a2ec;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* FINAL MESSAGE */
+
+.final-card {
+    max-width: 550px;
+    padding: 40px 25px;
+    background: #ffffff12;
+    border: 1px solid #e4a7ed66;
+    border-radius: 20px;
+    line-height: 1.9;
+}
+
+.final-card h2 {
+    margin-bottom: 25px;
+}
+
+.final-card p {
+    color: #eee4f5;
+}
+
+.final-card h3 {
+    color: #ffb9e2;
+    margin-top: 25px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #c9b9dc;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .welcome h1 {
+        font-size: 42px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 70px 15px;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .gift-container {
+        gap: 12px;
+    }
+
+    .gift-card {
+        padding: 20px 10px;
+    }
+
+    .gift-card h3 {
+        font-size: 14px;
+    }
+
+    .gift-card p {
+        font-size: 12px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .gallery img {
+        height: 230px;
+    }
+
+    .final-card {
+        padding: 30px 18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SECTION -->
+
+<section class="welcome" id="home">
+
+    <div class="welcome-content">
+
+        <p class="small-text">
+            A SPECIAL DAY FOR SOMEONE SPECIAL
+        </p>
+
+        <h1>
+            Happy Birthday,<br>
+            Supti 💙
+        </h1>
+
+        <p class="intro">
+            Today is your special day, and I hope it brings you
+            endless happiness, beautiful moments and countless
+            reasons to smile.
+            <br><br>
+            You deserve all the wonderful things life has to offer.
+        </p>
+
+        <button onclick="showSection('cake')">
+            Open Your Surprise ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- CAKE SECTION -->
+
+<section class="section" id="cake">
+
+    <h2>A Birthday Wish 🎂</h2>
+
+    <p>Make a wish and enjoy your special day!</p>
+
+    <div class="cake">🎂</div>
+
+    <button onclick="makeWish()" id="wishButton">
+        Make a Wish ✨
+    </button>
+
+    <p id="wishMessage" class="message"></p>
+
+    <button class="secondary-btn"
+    onclick="showSection('gifts')">
+        Continue →
+    </button>
+
+</section>
+
+
+<!-- SURPRISE GIFTS -->
+
+<section class="section" id="gifts">
+
+    <h2>Little Surprises For You 💝</h2>
+
+    <p>Click on each gift to open your surprise.</p>
+
+    <div class="gift-container">
+
+        <div class="gift-card" onclick="openGift(0)">
+            <div class="gift-icon">🎁</div>
+            <h3>Special Wish</h3>
+            <p id="gift0">Tap to open</p>
+        </div>
+
+        <div class="gift-card" onclick="openGift(1)">
+            <div class="gift-icon">💌</div>
+            <h3>A Sweet Message</h3>
+            <p id="gift1">Tap to open</p>
+        </div>
+
+        <div class="gift-card" onclick="openGift(2)">
+            <div class="gift-icon">🌸</div>
+            <h3>For Your Smile</h3>
+            <p id="gift2">Tap to open</p>
+        </div>
+
+        <div class="gift-card" onclick="openGift(3)">
+            <div class="gift-icon">💙</div>
+            <h3>One More Wish</h3>
+            <p id="gift3">Tap to open</p>
+        </div>
+
+    </div>
+
+    <button class="secondary-btn"
+    onclick="showSection('gallery')">
+        See Our Photos →
+    </button>
+
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
+<section class="section" id="gallery">
+
+    <h2>Beautiful Memories 📸</h2>
+
+    <p>Some moments worth remembering.</p>
+
+    <div class="gallery">
+
+        <img src="images/photo1.jpg" alt="Our Photo 1">
+
+        <img src="images/photo2.jpg" alt="Our Photo 2">
+
+        <img src="images/photo3.jpg" alt="Our Photo 3">
+
+    </div>
+
+    <button class="secondary-btn"
+    onclick="showSection('final')">
+        One Last Surprise →
+    </button>
+
+</section>
+
+
+<!-- FINAL MESSAGE -->
+
+<section class="section final-section" id="final">
+
+    <div class="final-card">
+
+        <h2>Happy Birthday, Supti! 💙</h2>
+
+        <p>
+            You are an amazing and special person.
+            I feel lucky to have you in my life.
+
+            <br><br>
+
+            May all your dreams come true.
+            May your days be filled with happiness,
+            peace and beautiful memories.
+
+            <br><br>
+
+            Keep smiling and always stay happy.
+
+            <br><br>
+
+            I love you so much! 💙
+        </p>
+
+        <h3>With Love ❤️</h3>
+
+    </div>
+
+    <p class="footer">
+        Made with love, just for Supti 💙
+    </p>
+
+</section>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const giftMessages = [
+
+    "May your life always be filled with happiness and success. 💙",
+
+    "You make ordinary days feel special. Never stop smiling! ❤️",
+
+    "I hope every little dream of yours comes true. 🌸",
+
+    "Wishing you countless beautiful moments and endless happiness. ✨"
+
+];
+
+const openedGifts = [false, false, false, false];
+
+
+function showSection(sectionId) {
+
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+
+        section.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+function makeWish() {
+
+    const message = document.getElementById("wishMessage");
+
+    const button = document.getElementById("wishButton");
+
+    message.innerText =
+        "May all your beautiful wishes come true, Supti! 💙✨";
+
+    button.innerText = "Wish Made! ❤️";
+
+    createConfetti();
+
+}
+
+
+function openGift(index) {
+
+    const gift = document.getElementById("gift" + index);
+
+    if (!openedGifts[index]) {
+
+        gift.innerText = giftMessages[index];
+
+        openedGifts[index] = true;
+
+    }
+
+}
+
+
+function createConfetti() {
+
+    for (let i = 0; i < 35; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.innerText = ["💙", "💗", "✨", "🎉"][
+            Math.floor(Math.random() * 4)
+        ];
+
+        confetti.style.position = "fixed";
+
+        confetti.style.left = Math.random() * 100 + "vw";
+
+        confetti.style.top = "-30px";
+
+        confetti.style.fontSize = "20px";
+
+        confetti.style.zIndex = "9999";
+
+        confetti.style.pointerEvents = "none";
+
+        document.body.appendChild(confetti);
+
+        const duration = 2000 + Math.random() * 2000;
+
+        const animation = confetti.animate(
+
+            [
+                {
+                    transform: "translateY(0) rotate(0deg)",
+                    opacity: 1
+                },
+
+                {
+                    transform: "translateY(110vh) rotate(360deg)",
+                    opacity: 0
+                }
+            ],
+
+            {
+                duration: duration,
+                easing: "ease-out"
+            }
+
+        );
+
+        animation.onfinish = () => confetti.remove();
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
